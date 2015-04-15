@@ -1,0 +1,107 @@
+
+
+div.navbar-fixed {
+
+  nav {
+    box-shadow: none;
+
+    a {
+      color: $primary-color-name;
+      opacity: 0;
+      font-weight: 200;
+
+      span.tys {
+        color: white;
+      }
+    }
+  }
+}
+
+section {
+  padding: 72px 24px;
+
+  &#hero {
+  min-height: 480px;
+  background: $primary-color;
+  @extend .valign-wrapper;
+
+    div#hero-text{
+      margin: 0 auto;
+      text-align: center;
+
+      h1 {
+        color: $primary-color-name;
+        margin: 0;
+        font-weight: 200;
+
+        span{
+          color: white;
+        }
+      }
+
+      h6 {
+        color: $primary-color-name;
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+
+
+      h3 {
+
+        a {
+          color: $primary-color-name;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  &#about-me {
+  min-height: 208px;
+  background: #EEEEEE;
+
+    p {
+      margin: 0 auto;
+      max-width: 720px;
+    }
+  }
+
+
+  &#projects {
+    min-height: 420px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    div.card-container {
+      @extend .col, .s12, .m6;
+
+      div.card {
+        max-height: 600px;
+        height: auto;
+
+        &:hover {
+          @extend .z-depth-2;
+        }
+
+        div.card-action {
+          position: relative;
+        }
+      }
+
+
+    }
+  }
+}
+
+
+div#email-form {
+
+  input {
+
+  }
+}
