@@ -10,6 +10,10 @@ div.navbar-fixed {
       opacity: 0;
       font-weight: 200;
 
+      @mixin media-query(350px) {
+        font-size: 1.9rem;
+      }
+
       span.tys {
         color: white;
       }
