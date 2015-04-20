@@ -69,9 +69,33 @@ section {
   min-height: 208px;
   background: #EEEEEE;
 
-    p {
-      margin: 0 auto;
+    div#about-wrapper {
       max-width: 720px;
+      margin: 0 auto;
+      @extend .row;
+
+      div#headshot-wrapper {
+        @extend .col, .s12, .m3;
+
+
+        img#headshot {
+          max-width: 100%;
+          border-radius: 50%;
+
+          @include media-query(710px) {
+            margin-top: 10%;
+          }
+
+          @include media-query(600px) {
+            max-width: 60%;
+            margin: 0 20%;
+          }
+        }
+      }
+
+      div#text-wrapper {
+        @extend .col, .s12, .m9;
+      }
     }
   }
 
@@ -103,9 +127,3 @@ section {
 }
 
 
-div#email-form {
-
-  input {
-
-  }
-}
